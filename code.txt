@@ -1,0 +1,10 @@
+Dim a as integer 
+a=8 
+select case x 
+case 0 
+a=a+6*(5+a) 
+case 2 to 6 
+a=9 
+case else 
+a=0 
+end select 
