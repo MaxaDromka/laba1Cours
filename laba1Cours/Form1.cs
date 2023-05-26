@@ -60,6 +60,10 @@ namespace laba1Cours
                     textBox3.Text += $"{let} - Идентификатор; \n";
                     list.Add($"{let} I");
                     textBox3.Text += Environment.NewLine;
+                    if(let.Length > 8)
+                    {
+                        MessageBox.Show("Длина идентификатора превышает 8 символов. Проверьте свой код.");
+                    }
                 }
                 if (validate.IsNumbers(Data[i]) == p)
                 {
@@ -69,10 +73,7 @@ namespace laba1Cours
                         num += Data[i];
                         i++;
                     }
-                     if(let.Length > 8)
-                    {
-                        MessageBox.Show("Длина идентификатора превышает 8 символов. Проверьте свой код.");
-                    }
+                     
                     textBox3.Text += $" {num} - Литерал; \n";
                     list.Add($"{num} L");
                     textBox3.Text += Environment.NewLine;
